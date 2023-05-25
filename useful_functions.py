@@ -4,7 +4,7 @@ def print_report(Profit, resources):
     print("Water :", resources["water"], "ml")
     print("Milk :", resources["milk"], "ml")
     print("Coffee :", resources["coffee"], "g")
-    print("Money :", Profit, "$")
+    print("Profit :", Profit, "$")
 
 
 def check_resources(MENU, choice, resources):
@@ -54,5 +54,5 @@ def Make_coffee(choice, MENU, resources):
 
 
 def TurnOff(choice):
-    return choice =="OFF" or choice =="off"
+    return choice.lower() =="off"
 
